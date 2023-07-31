@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <title>Document</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 85%;
+      margin: 0 auto;
+    }
+
+    .container h1 {
+      font-size: 1.5rem;
+    }
+
+    .container>div>.menu>img {
+      cursor: pointer;
+      width: 39px;
+      height: 14px;
+    }
+
+    .container>div {
+      padding: 10px 0;
+    }
+
+    .container>div>.menu {
+      align-items: center;
+      padding: 10px 3%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    header>nav>ul>li {
+      list-style: none;
+      margin: 15px 0;
+      border-bottom: 1px solid black;
+      padding: 5px 0;
+    }
+
+    header>nav>ul>li>a {
+      color: black;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+
+    header {
+      display: none;
+    }
+
+    section {
+      margin: 5% 0;
+    }
+
+    section>.container>img {
+      width: 100%;
+    }
+
+
+    section>.container>div> {
+      margin: 0 auto;
+      width: 90%;
+      text-align: left;
+    }
+
+    section>.container>div>h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 10px 0;
+      border-bottom: 1px solid black;
+    }
+
+    section>.container>div>p {
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 10px 0;
+      border-bottom: 1px solid black;
+    }
+
+    .Produtos {
+
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .Produtos .btn {
+      border-radius: 25px;
+      width: 20%;
+      min-width: 75%;
+      padding: 10px 20px;
+      margin: 10px 0;
+      background-color: black;
+
+
+    }
+
+    .btn span,
+    i {
+      padding-right: 10px;
+      color: white;
+    }
+
+    .Produtos li,
+    a {
+
+      list-style: none;
+      text-decoration: none;
+
+
+    }
+
+    #Produtos,
+    #sobre {
+      color: #cce;
+      font-size: 1.6rem;
+    }
+
+    .prime {
+      color: #52AD1D;
+    }
+
+    .Produtos li {
+      border-bottom: 1px solid rgb(102, 102, 102);
+    }
+
+
+    @media screen and (min-width:1080px) {
+      .midiaScreen img {
+        width: 200px;
+      }
+
+      .Produtos ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+
+        gap: 10px;
+      }
+
+      section>.container>img {
+        width: 40%;
+      }
+
+      .midiaScreen>.container {
+        justify-content: space-between;
+        display: flex;
+      }
+
+      section>.container>div>p {
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 20px 0;
+      border-bottom: 0px solid black;
+    }
+
+    section>.container>div {
+      padding: 10px 3%;
+      margin: 0;
+
+    }
+
+
+      .clear {
+        clear: both;
+      }
+
+      .Produtos li {
+        padding-left: 3%;
+      }
+
+      .Produtos .btn {
+        min-width: 230px;
+        padding: 10px 20px;
+        margin: 10px 0;
+        background-color: black;
+
+
+      }
+    }
+
+
+    @media screen and (min-width: 750px) and (max-width: 1079px) {
+      .midiaScreen img {
+        width: 200px;
+      }
+
+      .Produtos ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+
+        gap: 10px;
+      }
+
+      section>.container>img {
+        width: 40%;
+      }
+
+      .midiaScreen>.container {
+        justify-content: space-between;
+        display: flex;
+      }
+
+      section>.container>div>p {
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 20px 0;
+      border-bottom: 0px solid black;
+    }
+
+    section>.container>div {
+      padding: 10px 3%;
+      margin: 0;
+
+    }
+
+
+      .clear {
+        clear: both;
+      }
+
+      .Produtos li {
+        padding-left: 3%;
+      }
+
+      .Produtos .btn {
+        min-width: 230px;
+        padding: 10px 20px;
+        margin: 10px 0;
+        background-color: black;
+
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <div class="menu">
+        <img src="https://static.nike.com.br/v10-228-0/images/brands/logo.svg" />
+        <img style="width: 24px" id="menu_hb" src="https://img.icons8.com/?size=512&id=36389&format=png" />
+      </div>
+
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#sobre">Sobre a loja</a></li>
+            <li><a href="#Produtos">Produtos</a></li>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </div>
+  <hr />
+  <div class="clear"></div>
+  <section class="midiaScreen">
+    <div class="container">
+      <img src="https://wallpapercave.com/wp/wp2907289.jpg" />
+
+      <div>
+        <h2 id="sobre" class="sliding-link">Sobre a loja</h2>
+        <p>
+          Nike é uma das marcas mais icônicas e influentes do mundo, uma
+          gigante no universo do esporte e do estilo de vida. Fundada em 1964,
+          nos Estados Unidos, por Bill Bowerman e Phil Knight, a empresa
+          começou como Blue Ribbon Sports, mas em 1971 mudou oficialmente para
+          o nome que a tornaria famosa: Nike, inspirado na deusa grega da
+          vitória.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="Produtos">
+    <div class="container">
+      <div>
+        <h2 id="Produtos" class="sliding-link">Produtos</h2>
+        <ul>
+          <li>
+            <div>
+              <img src="https://imgnike-a.akamaihd.net/250x250/022619ID.jpg">
+              <h3>Tênis Nike Pegasus Turbo Next Nature Masculino</h3>
+              <p>Corrida</p>
+              <span class="prime">R$ 739,99 <s>R$ 1299,99</s> </span>
+              <div class="btn">
+                <a href="#"><span>adicionar ao
+                    carrinho</span><i class="fa-solid fa-cart-shopping fa-beat"></i></a>
+              </div>
+
+            </div>
+          </li>
+
+
+
+          <li>
+            <div>
+              <img src="https://imgnike-a.akamaihd.net/250x250/022118P1.jpg">
+              <h3>Tênis Nike Pegasus Turbo Next Nature Masculino</h3>
+              <p>Corrida</p>
+              <span class="prime">R$ 739,99 <s>R$ 1299,99</s> </span>
+              <div class="btn">
+                <a href="#"><span>adicionar ao
+                    carrinho</span><i class="fa-solid fa-cart-shopping fa-beat"></i></a>
+              </div>
+
+            </div>
+          </li>
+
+
+
+
+          <li>
+            <div>
+              <img src="https://imgnike-a.akamaihd.net/250x250/022810IM.jpg">
+              <h3>Tênis Nike Pegasus Turbo Next Nature Masculino</h3>
+              <p>Corrida</p>
+              <span class="prime">R$ 739,99 <s>R$ 1299,99</s> </span>
+              <div class="btn">
+                <a href="#"><span>adicionar ao
+                    carrinho</span><i class="fa-solid fa-cart-shopping fa-beat"></i></a>
+              </div>
+
+            </div>
+          </li>
+
+
+
+
+          <li>
+            <div>
+              <img src="https://imgnike-a.akamaihd.net/250x250/02695451.jpg">
+              <h3>Tênis Nike Pegasus Turbo Next Nature Masculino</h3>
+              <p>Corrida</p>
+              <span class="prime">R$ 739,99 <s>R$ 1299,99</s> </span>
+              <div class="btn">
+                <a href="#"><span>adicionar ao
+                    carrinho</span><i class="fa-solid fa-cart-shopping fa-beat"></i></a>
+              </div>
+
+            </div>
+          </li>
+
+
+
+
+
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+  <script>
+    $(document).ready(() => {
+      $("#menu_hb").click("click", () => {
+        $("header").slideToggle();
+      });
+      $('nav a').on('click', function (e) {
+        e.preventDefault();
+        var target = $(this.hash);
+        if (target.length) {
+          smoothScrollTo(target.offset().top);
+        }
+      });
+
+      function smoothScrollTo(targetPosition) {
+        $('html, body').animate({
+          scrollTop: targetPosition
+        }, 1000);
+      }
+
+    });
+  </script>
+</body>
+
+</html>
